@@ -1,3 +1,3 @@
 just practise more
-hell, have a rest
+hello, have a rest
 game 
