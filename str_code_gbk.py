@@ -1,0 +1,7 @@
+#!/bin/env python3
+# coding: gbk
+
+str = '²âÊÔgbkµÄÇé¿ö'
+f = open('./code_file','a',encoding='gbk')
+f.write(str)
+f.close()
