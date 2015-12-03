@@ -1,0 +1,26 @@
+时间操作
+datetime模块的六个模块：不考虑闰秒(leap seconds), daylight saving time(夏令时 可调整)
+date模块：只提供日期类的操作，无时域属性tzinfo,按照的规则GMT(=UTC)显示 
+time模块: 只提供时分秒的操作，有时域属性
+datetime模块: 包含 date模块和time模块的总和，有时域属性
+timedelta模块：时间间隔，简单的时间间距
+tzinfo: an abstract base class for time zone information objects
+timezone: a class that implements the tzinfo abstract base class as a fixed offset from UTC 
+
+两个重要的方法，支持的类有date,datetime,time
+strftime(): 由字符串转化成日期 
+strptime(): 有日期转化成字符串 
+日期和字符串对照表 TODO
+--------------------------------------------------------------------
+年份: %y 两位数的年份 %Y四位数的年份
+月份：%m 两位数的月份 %b本地简化月份 %B本地完整月份
+日期：%d 月内的一天(0-31) %j 年内的一天(001-366)
+小时：%H 24小时制小时数(0-23) %l 12小时制小时制(01-12)
+A.M./P.M.: %p 本地A.M.或者P.M.的等价符
+分钟：%M 分钟数(00-59)
+秒：%S 秒(00-59)
+
+timestamp: POSIX timestamp,POSIX time，一种时间表示方式，定义为从格林威治时间1970年01月01日00时00分00秒起至现在的总秒数
+	   推荐使用datatime的timestamp() 和 fromtimestamp()
+
+calendar TODO

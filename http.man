@@ -1,0 +1,6 @@
+httplib是相对底层的封装
+urllib urllib2 urllib3 是上层的封装
+urllib2 请求比urllib丰富，可设置的细节多，urllib有urlencode，2没有
+
+推荐urllib3，有urlencode、有请求，连接池(快很多)，有 file posting ， 有retry，线程安全...
+http://urllib3.readthedocs.org/
